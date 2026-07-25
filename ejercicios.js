@@ -74,6 +74,6 @@ function clasificarTemperaturas(temperaturas) {
     return diasMuyCalurosos;
 }
 
-const temperaturasSemana = [5, 15, 25, 33, 18, 9, 31];
+const temperaturasSemana = [9, 19, 29, 39, 8, 9, 50];
 const diasCalurosos = clasificarTemperaturas(temperaturasSemana);
 console.log("Días muy calurosos en la semana: " + diasCalurosos);
