@@ -37,6 +37,6 @@ function contarParesImpares(numeros) {
     return { pares: pares, impares: impares };
 }
 
-const listaNumeros = [3, 8, 12, 7, 19, 22, 5];
+const listaNumeros = [2, 8, 12, 7, 19, 22, 5];
 const resultadoConteo = contarParesImpares(listaNumeros);
 console.log("Pares: " + resultadoConteo.pares + " | Impares: " + resultadoConteo.impares);
