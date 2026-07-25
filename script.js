@@ -17,5 +17,5 @@ function evaluarEstudiante(notas) {
         return "Reprobado";
     }
 }
-const notasEstudiante = [8, 6, 7, 9, 5];
+const notasEstudiante = [5, 4, 8, 10, 3];
 console.log("Resultado del estudiante: " + evaluarEstudiante(notasEstudiante));
