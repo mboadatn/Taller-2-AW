@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteZone - Contacto</title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+
+    <a href="#contenido">Saltar al contenido principal</a>
+
+    <header>
+        <p><strong>ByteZone</strong> - Tecnología y Electrónica</p>
+
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+
+        <section aria-labelledby="titulo-contacto">
+            <h1 id="titulo-contacto">Contáctanos</h1>
+            <p>¿Tienes dudas sobre nuestros productos o servicios? Escríbenos y te responderemos a la brevedad.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Formulario de contacto</legend>
+
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required maxlength="50">
+
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="0999999999" pattern="[0-9]{10}">
+
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="ventas">Consulta de ventas</option>
+                        <option value="soporte">Soporte técnico</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+
+                    <button type="submit">Enviar mensaje</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section aria-labelledby="titulo-info">
+            <h2 id="titulo-info">Información de Contacto</h2>
+            <address>
+                Dirección: Av. Amazonas y Naciones Unidas, Quito, Ecuador <br>
+                Correo: <a href="mailto:contacto@bytezone.com">contacto@bytezone.com</a> <br>
+                Teléfono: <a href="tel:+593999999999">+593 99 999 9999</a>
+            </address>
+        </section>
+
+        <section aria-labelledby="titulo-mapa">
+            <h2 id="titulo-mapa">Nuestra Ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7979.598425087342!2d-78.48759868244784!3d-0.17732361686054157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a8573de8b85%3A0xef29970a929e7e30!2sAv.%20R%C3%ADo%20Amazonas%20%26%20Av.%20Naciones%20Unidas%2C%20170102%20Quito!5e0!3m2!1ses-419!2sec!4v1784246204915!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ByteZone.</p>
+        
+    </footer>
+
+</body>
+</html>
