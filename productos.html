@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteZone - Productos</title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+
+    <a href="#contenido">Saltar al contenido principal</a>
+
+    <header>
+        <p><strong>ByteZone</strong> - Tecnología y Electrónica</p>
+
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html" aria-current="page">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+
+        <section aria-labelledby="titulo-productos">
+            <h1 id="titulo-productos">Nuestros Productos</h1>
+            <p>Explora nuestro catálogo de tecnología: laptops, accesorios y equipos gaming.</p>
+        </section>
+
+        <section aria-labelledby="titulo-catalogo">
+            <h2 id="titulo-catalogo">Catálogo</h2>
+
+            <div class="controles-catalogo">
+                <div class="campo-buscador">
+                    <label for="buscador">Buscar producto</label>
+                    <input type="search" id="buscador" placeholder="Ej: laptop, mouse, teclado...">
+                </div>
+
+                <div class="campo-filtro">
+                    <label for="filtroCategoria">Categoría</label>
+                    <select id="filtroCategoria">
+                        <option value="todos">Todas las categorías</option>
+                        <option value="laptops">Laptops</option>
+                        <option value="accesorios">Accesorios</option>
+                    </select>
+                </div>
+            </div>
+
+        <div class="grid-catalogo" id="grid-catalogo">
+
+            <article class="producto-card" data-categoria="laptops" data-nombre="bytex 15 gamer 16gb ram 512gb ssd tarjeta grafica dedicada laptop">
+                <img src="https://picsum.photos/seed/bytex15/320/200" alt="Laptop ByteX 15 Gamer">
+                <span class="producto-card__categoria">Laptops</span>
+                <h3>ByteX 15 Gamer</h3>
+                <p>16GB RAM, 512GB SSD, tarjeta gráfica dedicada.</p>
+                <p class="producto-card__precio">$899.99</p>
+            </article>
+
+            <article class="producto-card" data-categoria="laptops" data-nombre="bytex office slim 8gb ram 256gb ssd trabajo estudio laptop">
+                <img src="https://picsum.photos/seed/officeslim/320/200" alt="Laptop ByteX Office Slim">
+                <span class="producto-card__categoria">Laptops</span>
+                <h3>ByteX Office Slim</h3>
+                <p>8GB RAM, 256GB SSD, ideal para trabajo y estudio.</p>
+                <p class="producto-card__precio">$549.99</p>
+            </article>
+
+            <article class="producto-card" data-categoria="accesorios" data-nombre="audifonos soundmax inalambricos cancelacion ruido accesorio">
+                <img src="https://picsum.photos/seed/audifonos/320/200" alt="Audífonos SoundMax">
+                <span class="producto-card__categoria">Accesorios</span>
+                <h3>Audífonos SoundMax</h3>
+                <p>Inalámbricos, cancelación de ruido.</p>
+                <p class="producto-card__precio">$59.99</p>
+            </article>
+
+            <article class="producto-card" data-categoria="accesorios" data-nombre="teclado bytekeys mecanico retroiluminacion rgb accesorio">
+                <img src="https://picsum.photos/seed/teclado/320/200" alt="Teclado ByteKeys">
+                <span class="producto-card__categoria">Accesorios</span>
+                <h3>Teclado ByteKeys</h3>
+                <p>Mecánico, retroiluminación RGB.</p>
+                <p class="producto-card__precio">$45.50</p>
+            </article>
+
+            <article class="producto-card" data-categoria="accesorios" data-nombre="mouse byteclick pro inalambrico sensor alta precision accesorio">
+                <img src="https://picsum.photos/seed/mouse/320/200" alt="Mouse ByteClick Pro">
+                <span class="producto-card__categoria">Accesorios</span>
+                <h3>Mouse ByteClick Pro</h3>
+                <p>Inalámbrico, sensor de alta precisión.</p>
+                <p class="producto-card__precio">$25.00</p>
+            </article>
+
+            <article class="producto-card" data-categoria="accesorios" data-nombre="monitor byteview 24 pulgadas full hd 75hz accesorio">
+                <img src="https://picsum.photos/seed/monitor/320/200" alt="Monitor ByteView 24 pulgadas">
+                <span class="producto-card__categoria">Accesorios</span>
+                <h3>Monitor ByteView 24"</h3>
+                <p>Full HD, 75Hz.</p>
+                <p class="producto-card__precio">$139.99</p>
+            </article>
+
+        </div>
+
+        <p id="sin-resultados" class="sin-resultados" hidden>No se encontraron productos que coincidan con tu búsqueda.</p>
+        </section>
+
+        <section aria-labelledby="titulo-servicios">
+            <h2 id="titulo-servicios">Servicios</h2>
+            <div class="grid-servicios">
+                <article>
+                    <h3>Soporte Técnico</h3>
+                    <p>Diagnóstico y reparación de equipos, con garantía de servicio.</p>
+                </article>
+                <article>
+                    <h3>Armado de PC a medida</h3>
+                    <p>Ensamblamos tu computadora según tus necesidades y presupuesto.</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ByteZone.</p>
+        
+    </footer>
+
+    <script src="./productos.js"></script>
+</body>
+</html>
